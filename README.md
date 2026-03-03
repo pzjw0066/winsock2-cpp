@@ -19,13 +19,13 @@
 ```cpp
 // 在包含头文件之前定义此宏，用于插入实现
 #define WINSOCK2_CPP_IMPLEMENTATION
-#include "winsock2_cpp.hpp"
+#include "winsock2-cpp.hpp"
 
 // 或者如果你的项目中只需要一处实现：
-#include "winsock2_cpp.hpp"  // 普通头文件
+#include "winsock2-cpp.hpp"  // 普通头文件
 // 在某个.cpp文件中：
 #define WINSOCK2_CPP_IMPLEMENTATION
-#include "winsock2_cpp.hpp"
+#include "winsock2-cpp.hpp"
 ```
 
 ### 2. 客户端示例
@@ -34,7 +34,7 @@
 #include <iostream>
 
 #define WINSOCK2_CPP_IMPLEMENTATION
-#include "winsock2_cpp.hpp"
+#include "winsock2-cpp.hpp"
 
 int main() {
     try {
@@ -75,7 +75,7 @@ int main() {
 #include <thread>
 
 #define WINSOCK2_CPP_IMPLEMENTATION
-#include "winsock2_cpp.hpp"
+#include "winsock2-cpp.hpp"
 
 void handle_client(winsock2::Socket client) {
     std::string request;
@@ -191,7 +191,7 @@ void Shutdown();
 ### 项目设置
 
 **Visual Studio:**
-1. 将`winsock2_cpp.hpp`添加到项目
+1. 将`winsock2-cpp.hpp`添加到项目
 2. 在项目属性中，链接到`ws2_32.lib`：
    - 链接器 → 输入 → 附加依赖项：添加`ws2_32.lib`
 
