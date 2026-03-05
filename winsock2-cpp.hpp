@@ -125,8 +125,6 @@ namespace winsock2 {
     };
 }
 
-#endif
-
 #ifdef WINSOCK2_CPP_IMPLEMENTATION
 
 #include <format>
@@ -253,5 +251,7 @@ namespace winsock2 {
             throw SocketShutdownFailedError(std::format("Socket shutdown failed with error: {}", WSAGetLastError()));
     }
 }
+
+#endif
 
 #endif
